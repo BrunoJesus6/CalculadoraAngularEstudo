@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CalculadoraComponent } from './paginas/calculadora/calculadora.component';
 
 const routes: Routes = [
-  { path: '', component: CalculadoraComponent }, // Corrigido para path vazio
+  { path: '', component: CalculadoraComponent },
 ];
 
 @NgModule({

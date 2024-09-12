@@ -2,22 +2,28 @@
   <div class="calculadora">
     <input type="text" [(ngModel)]="display" readonly class="display"/>
     <div class="teclado">
+      <button (click)="apagar()" class="span-3">C</button>
+      <button (click)="operacao('/')" class="operator">/</button>
+
       <button (click)="apertarTecla('1')">1</button>
       <button (click)="apertarTecla('2')">2</button>
       <button (click)="apertarTecla('3')">3</button>
       <button (click)="operacao('+')" class="operator">+</button>
+
       <button (click)="apertarTecla('4')">4</button>
       <button (click)="apertarTecla('5')">5</button>
       <button (click)="apertarTecla('6')">6</button>
       <button (click)="operacao('-')" class="operator">-</button>
+
       <button (click)="apertarTecla('7')">7</button>
       <button (click)="apertarTecla('8')">8</button>
       <button (click)="apertarTecla('9')">9</button>
       <button (click)="operacao('*')" class="operator">*</button>
-      <button (click)="apagar()">C</button>
+
       <button (click)="apertarTecla('0')">0</button>
-      <button (click)="calcular()">=</button>
-      <button (click)="operacao('/')" class="operator">/</button>
+      <button (click)="apertarTecla('.')">.</button>
+      <button (click)="calcular()" class="span-2">=</button>
+      
     </div>
   </div>
 </div>
